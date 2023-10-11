@@ -1,4 +1,5 @@
-import { Col, Card, Button, CardImg } from 'react-bootstrap'
+/* eslint-disable react/prop-types */
+import { Col, Card, Button} from 'react-bootstrap'
 import useBebidas from '../hooks/useBebidas'
 
 
@@ -24,6 +25,7 @@ const Bebida = ({bebida}) => {
              className='w-100 text-uppercase mt-2'
              onClick={ () => {
               handleModalClick()
+              // eslint-disable-next-line react/prop-types
               handleBebidaIdClick(bebida.idDrink)
              }}
            >
